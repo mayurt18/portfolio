@@ -3,162 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mayur Thakar - Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Mayur Thakar Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero-section, .about-section, .skills-section, .projects-section, .contact-section {
+            padding: 50px 0;
+        }
+        .hero-section {
+            text-align: center;
+            background-color: #f0f0f0;
+            padding-top: 80px;
+        }
+        .hero-section img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        .hero-section h1 {
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #333;
+            font-size: 1.5rem;
+            margin: 0 10px;
+        }
+        .about-section img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+        .skills-section h3, .projects-section h3, .contact-section h3 {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .skills-section .progress {
+            height: 20px;
+            margin-bottom: 15px;
+        }
+        .progress-bar {
+            font-weight: bold;
+        }
+        .projects-section .card {
+            margin: 15px;
+        }
+        .contact-section .contact-info {
+            font-size: 1.1rem;
+        }
+        .education-work-section {
+            padding: 50px 0;
+        }
+        .education-work-section h3 {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .education-work-wrapper {
+            display: flex;
+            justify-content: space-around;
+        }
+        .education-section, .work-section {
+            width: 45%;
+        }
+        .education-section ul, .work-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .education-section li, .work-section li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .education-section li .icon, .work-section li .icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: #007bff;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+    </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
-    <div class="container">
-        <a class="navbar-brand" href="#">Mayur Thakar</a><ul class="navbar-nav ml-auto">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="https://github.com/mayurt18">GitHub</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                
-            </ul>
-        </div>
-    </div>
-</nav>
-
+    </nav>
 <!-- Hero Section -->
-<section id="hero" class="hero d-flex align-items-center text-center">
-    <div class="container">
-        <h1>Hi, I'm Mayur Thakar</h1>
-        <p class="hero-lead">Crafting web experiences that balance aesthetics with performance</p>
-        <a href="#projects" class="btn btn-hero mt-4">Explore My Work</a>
+<div class="hero-section">
+    <img src="images\IMG_5472.jpg" alt="Mayur Thakar">
+    <h1>Hi, I’m Mayur</h1>
+    <p>Junior Web Developer | Backend Enthusiast | Problem-Solver</p>
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/mayur.thakar18" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/mayurt18" target="_blank"><i class="fab fa-github"></i></a>
     </div>
-</section>
+    <a href="#projects-section container" class="btn btn-hero mt-4">Explore My Work</a>
+
+    
+</div>
 
 <!-- About Section -->
-<!-- About Section -->
-<section id="about" class="py-5">
-    <div class="container">
-        <h2>About Me</h2>
-        <div class="about-card shadow-lg p-4 mt-4">
-            <p class="about-text">I’m <strong>Mayur Thakar</strong>, a backend developer with a Master’s degree in Computer Science and a deep-rooted passion for crafting powerful, scalable web applications. With proficiency in PHP, JavaScript, and cutting-edge frameworks, I specialize in bringing a balance of clean code and user-centered functionality to every project.</p>
-            <p class="about-text">My approach is simple yet impactful: create solutions that not only perform but also engage, using the art of coding to bring ideas to life. From optimizing backend architectures to designing fluid, responsive interfaces, I’m driven to build experiences that resonate with users and fulfill real-world needs.</p>
+<div class="about-section container text-center">
+    <h2>About Me</h2>
+    
+    <p>I'm a proactive and dedicated web developer with a Master’s in Computer Science and a passion for backend development. Having worked as a backend developer in an Agile environment, I am well-versed in PHP, Laravel, and MySQL. I thrive in dynamic settings, and my foundation in Docker and REST APIs allows me to create efficient, scalable solutions. With certifications in React, WordPress, and JavaScript, I’m always keen to broaden my skill set and adapt to new technologies. Beyond coding, I enjoy swimming and hold an NCC ‘A’ certification, reflecting my discipline and commitment."</p>
+    <a href="Mayur_CV.pdf" class="btn btn-primary mt-3" download>Download CV</a>
+</div>
 
-            <h4 class="mt-4">Technical Proficiencies</h4>
-            <ul class="skills-list">
-                <li><strong>Languages:</strong> PHP, C, C++, Java</li>
-                <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React</li>
-                <li><strong>Backend:</strong> PHP, Laravel, MySQL</li>
-                <li><strong>Tools:</strong> Docker, Git, XAMPP, VS Code</li>
+
+<!-- Skills Section -->
+<div class="skills-section container">
+    <h3>Skills</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Frontend Developer</h4>
+            <div class="progress">
+                <div class="progress-bar bg-info" style="width:90%">HTML5 - 90%</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-info" style="width:90%">CSS - 90%</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-info" style="width:80%">JavaScript - 80%</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-info" style="width:55%">React - 55%</div>
+            </div>
+            <!-- Add other frontend skills here -->
+        </div>
+        <div class="col-md-6">
+            <h4>Backend Developer</h4>
+            <div class="progress">
+                <div class="progress-bar bg-info" style="width:80%"> PHP (OOP, MVC) 90%</div>
+            </div>
+            <!-- Add other backend skills here -->
+            <div class="progress">
+                <div class="progress-bar bg-info" style="width:70%"> Laravel 70%</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-info" style="width:80%"> SQL Databases 80%</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-info" style="width:70%"> Docker 70%</div>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+
+<!-- Education and Work Section -->
+<div class="education-work-section container">
+    <h3>Education & Work Experience</h3>
+    <div class="education-work-wrapper">
+        <!-- Education Section -->
+        <div class="education-section">
+            <h4>Education</h4>
+            <ul>
+                <li>
+                    <i class="fas fa-graduation-cap icon"></i>
+                    <div>
+                        <h5>Master's in Computer Science</h5>
+                        <p>International Black Sea University - 2024</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-university icon"></i>
+                    <div>
+                        <h5>Bachelor's in Computer Science</h5>
+                        <p>University of Pune - 2020</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Work Section -->
+        <div class="work-section">
+            <h4>Work Experience</h4>
+            <ul>
+                <li>
+                    <i class="fas fa-briefcase icon"></i>
+                    <div>
+                        <h5>Backend Developer </h5>
+                        <p>Money4You Financial – Backend Developer (Dec 2023 - Apr 2024)</p>
+                    </div>
+                </li>
+                <li>
+                   
+                    
+                </li>
             </ul>
         </div>
     </div>
-</section>
-
+</div>
 
 <!-- Projects Section -->
-<section id="projects" class="py-5 bg-light">
-    <div class="container">
-        <h2>Projects</h2>
-
-        <!-- Live Projects -->
-        <h4>Live Projects</h4>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card project-card">
-                    <img src="assets/images/poll-system.png" class="card-img-top" alt="poll-system">
-                    <div class="card-body">
-                        <h5 class="card-title">Poll System</h5>
-                        <a href="https://mayurt18.github.io/poll-system-application/" class="btn btn-glassy" target="_blank">Live Project</a>
-                    </div>
-                </div>
-            </div>
-           
-            <div class="col-md-4">
-                <div class="card project-card">
-                    <img src="assets/images/temperature-converter.png" class="card-img-top" alt="Temperature Converter">
-                    <div class="card-body">
-                        <h5 class="card-title">Temperature Converter</h5>
-                        <a href="https://mayurt18.github.io/temperature-converter/" class="btn btn-glassy" target="_blank">Live Project</a>
-                    </div>
-                </div>
-            </div>
-           
-            <div class="col-md-4">
-                <div class="card project-card">
-                    <img src="assets/images/coin-flip.png" class="card-img-top" alt="Coin Flip">
-                    <div class="card-body">
-                        <h5 class="card-title">Coin Flip</h5>
-                        <a href="https://mayurt18.github.io/Coin-Flip-Application/" class="btn btn-glassy" target="_blank">Live Project</a>
-                    </div>
+<div class="projects-section container">
+    <h3>Projects</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Task Management System</h5>
+                    <p class="card-text">PHP (OOP, MVC), MySQL and AJAX</p>
+                    <a href="https://github.com/mayurt18/task-manager" target="_blank" class="btn btn-outline-primary">View Project</a>
                 </div>
             </div>
         </div>
-        <h4>GitHub Repositories</h4>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card project-card">
-                    <img src="assets/images/task-manager.png" class="card-img-top" alt="Task Manager">
-                    <div class="card-body">
-                        <h5 class="card-title">Task Manager</h5>
-                        <p class="card-text">A simple task management tool that helps users create, organize, and track tasks efficiently. Built with PHP and JavaScript for interactivity.</p>
-                        <a href="https://github.com/mayurt18/task-manager" class="btn btn-glassy" target="_blank">GitHub Repository</a>
-                    </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">E-commerce Product Catalog</h5>
+                    <p class="card-text">PHP (OOP, MVC), MySQL, JavaScript</p>
+                    <a href="https://github.com/mayurt18/ecommerce-site" target="_blank" class="btn btn-outline-primary">View Project</a>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card project-card">
-                    <img src="assets/images/ecommerce.png" class="card-img-top" alt="Ecommerce Site">
-                    <div class="card-body">
-                        <h5 class="card-title">E-commerce Site</h5>
-                        <p class="card-text">An e-commerce platform that allows browsing, adding to cart, and secure checkout. Designed with a user-friendly layout and PHP backend.</p>
-                        <a href="https://github.com/mayurt18/ecommerce-site" class="btn btn-glassy" target="_blank">GitHub Repository</a>
-                    </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Poll System Application</h5>
+                    <p class="card-text">HTML5, CSS, JavaScript</p>
+                    <a href="https://mayurt18.github.io/poll-system-application/" target="_blank" class="btn btn-outline-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Weather App</h5>
+                    <p class="card-text">HTML, PHP,  OpenWeather API</p>
+                    <a href="https://github.com/mayurt18/weather-app" target="_blank" class="btn btn-outline-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Temperature Converter</h5>
+                    <p class="card-text">HTML5 and CSS3. JavaScript</p>
+                    <a href="https://mayurt18.github.io/temperature-converter/" target="_blank" class="btn btn-outline-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Coin Flip Application</h5>
+                    <p class="card-text">HTML5 and CSS3. JavaScript</p>
+                    <a href="hhttps://mayurt18.github.io/Coin-Flip-Application/" target="_blank" class="btn btn-outline-primary">View Project</a>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
 
 <!-- Contact Section -->
-<section id="contact-info" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center">Contact Information</h2>
-        <div class="contact-card shadow-lg p-4 mt-4 mx-auto">
-            <h3 class="mb-4">Mayur Thakar</h3>
-            <ul class="contact-details">
-                <li><i class="fas fa-phone-alt"></i> <strong>Phone: </strong>  +91 8379936568</li>
-                                <li><i class="fas fa-envelope"></i> <strong>Email: </strong>  mayurthakar1988@gmail.com</li>
-                <li><i class="fas fa-map-marker-alt"></i> <strong>Location: </strong>  Pune, India</li>
-            </ul>
-        </div>
-    </div>
-</section>
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-<section id="contact" class="py-5">
-    <div class="container">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/xanyokor" method="POST">
-            <input type="text" name="name" class="form-control mb-2" placeholder="Your Name" required>
-            <input type="email" name="email" class="form-control mb-2" placeholder="Your Email" required>
-            <textarea name="message" class="form-control mb-2" rows="4" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn btn-success">Send Message</button>
-        </form>
-    </div>
-</section>
+<div class="contact-section container text-center">
+    <h3>Contact Me</h3>
+    <p class="contact-info">📞 Call Me: +91 8379936568</p>
+    <p class="contact-info">📧 Email: mayurthakar1988@gmail.com</p>
+    <p class="contact-info">📍 Location: India</p>
+</div>
 
 <!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-    
-        <p>&copy; 2024 Mayur Thakar. All rights reserved.</p>
-</footer>
-<!-- Font Awesome for Icons -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
+<div class="footer">
+    <p>Mayur Thakar - Junior Web Developer</p>
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/MayurThakar" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
